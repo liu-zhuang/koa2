@@ -15,9 +15,9 @@ const puppeteer = require('puppeteer');
 			domain: '.yiguo.com',
 			value: '{"Default":0,"Version":"2.0","Id":"312d0556-0671-4f2e-8bac-7b8873b5a03a","Name":"%E4%B8%8A%E6%B5%B7","Code":1,"DId":"1f3180c7-4ec3-43ad-80b3-d4561ba20589","DName":"%E5%AE%9D%E5%B1%B1%E5%8C%BA"}'		});
 		// goto
-		await page.goto('https://ztactivity.yiguo.com/H5Activity/Index?code=20180412002');
+		await page.goto('http://home.m.yiguo.com');
 		// wait for loading
-		await page.waitFor(2000);
+		await page.waitFor(8000);
 
 		const result = await page.evaluate(() => {
 			const temp = document.querySelectorAll('[data-cid]');

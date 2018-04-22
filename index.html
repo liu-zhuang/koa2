@@ -1,0 +1,29 @@
+<html>
+<body>
+	<script>
+
+		@nation
+		class Person {
+			constructor (name, sex, age) {
+				this.name = name;
+				this.sex = sex;
+				this.age = age;
+			}
+		}
+
+
+		// function nation (nation)  {
+		// 	return (target, name, descriptor) => {
+		// 		target.nation = nation;
+		// 	}
+		// }
+		function nation (target) {
+			target.nation = 'china'
+		}
+
+		let xyy = new Person();
+
+		console.log(xyy);
+	</script>
+</body>
+</html>
